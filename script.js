@@ -21,6 +21,7 @@ let hour = 0,
 })();
 
 function init_dials() {
+
     sec_angle = sec * 6;
     min_angle = (min * 6);
     hour_angle = (hour * 30);
@@ -34,5 +35,6 @@ setInterval(() => {
     sec = (sec + 1) % 60;
     min = min + 1 / 60;
     hour = hour + 1 / 3600;
+
     init_dials();
 }, 1000);
